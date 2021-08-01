@@ -1,0 +1,11 @@
+version: "3.3"
+services:
+    flask_app:
+        build: ./scripts
+        ports:
+            - "5000:8000"
+    ui-app:
+        build: ./ui-app
+        ports:
+            - "3000:3000"
+    
