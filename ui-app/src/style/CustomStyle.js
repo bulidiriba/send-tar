@@ -4,20 +4,15 @@ import {createTheme} from '@material-ui/core/styles';
 export const theme = createTheme({
     palette:{
         primary: {
-            main: "#4791db"
+            main: "#4791db",
+            background: "#233655",
+            text: "#b9bdc1",
+            error: "#f44336",
+            success: "#4caf50",
         },
         secondary:{
             main: '#2e9ad6'
         },
-        error: {
-            main: "#f44336",
-        },
-        info: {
-            main: "#b9bdc1",
-        },
-        success: {
-            main: "#4caf50",
-        }
     }
 })
 
@@ -29,11 +24,5 @@ export const useStyles = makeStyles((theme) => ({
     },
     fileUpload: {
         backgroundColor: '#0a2042',
-    },
-    info: {
-        color: '#b9bdc1',
-    },
-    success: {
-        color: "#4caf50",
     },
 }));

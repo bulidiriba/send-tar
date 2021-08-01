@@ -6,7 +6,6 @@ import Box from '@material-ui/core/Box'
 
 import Header from './components/Header';
 import FileUpload from './components/FileUpload';
-import Download from './components/Download';
 import Footer from './components/Footer';
 
 
@@ -24,14 +23,19 @@ function App(props) {
       <Router>
         <div className={classes.root}>
 
-          {/* header */}
+          {/* Header */}
           <Box>
             <Header />
           </Box>
 
-          {/* add File Upload Pane */}
+          {/* Add File Execution Pane */}
           <Box pt={10}>
             <FileUpload classes={classes} />
+          </Box>
+
+          {/* Footer */}
+          <Box>
+            <Footer />
           </Box>
           
         </div>
