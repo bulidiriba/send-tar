@@ -5,7 +5,10 @@ services:
         ports:
             - "5000:8000"
     ui-app:
-        build: ./ui-app
+        build:
+            context: ./ui-app
+            args:
+                nginx_config_file: default.local.conf
         ports:
-            - "3000:3000"
+            - "5001:80"
     
