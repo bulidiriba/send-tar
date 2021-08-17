@@ -7,7 +7,12 @@ import Typography from '@material-ui/core/Typography';
 import Button from '@material-ui/core/Button';
 import Link from '@material-ui/core/Link';
 import Divider from '@material-ui/core/Divider';
+import TextField from '@material-ui/core/TextField';
 import CompareIcon from '@material-ui/icons/Compare';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import { ThemeProvider, createTheme, withStyles } from '@material-ui/core/styles';
+
 import axios from 'axios';
 import fileDownload from 'js-file-download'
 
@@ -15,19 +20,63 @@ import fileDownload from 'js-file-download'
 const apiEndpoint = process.env.REACT_APP_API_ENDPOINT
 console.log("----flask rest api-----", apiEndpoint);
 
+// create the custom Text Field for entering URL 
+const CustomTextField = withStyles({
+    root: {
+      '& label.Mui-focused': {
+            color: '#4791db',
+      },
+      '& .MuiInput-underline:after': {
+            borderBottomColor: '#4791db',
+      },
+      '& .MuiOutlinedInput-root': {
+        '& fieldset': {
+            borderColor: '#808080',
+        },
+        '&:hover fieldset': {
+            borderColor: '#b9bdc1',
+        },
+        '&.Mui-focused fieldset': {
+            borderColor: '#',
+        },
+      },
+    },
+  })(TextField);
+
 function FileUpload(props) {
 
-    const [selectedFile, setSelectedFile] = useState({file1: null, file2: null});
-    const [errorSelectedFile, setErrorSelectedFile] = useState({file1: [false, ""], file2: [false, ""]});
-    const [executedResult, setExecutedResult] = useState({error: [false, ""], success: [false, ""]});
+    const [selectedFile, setSelectedFile] = useState({file1:  null, file2: null});
+    const [selectedUrl, setSelectedUrl] = useState({file1:  null, file2: null});
+    const [errorSelectedFile, setErrorSelectedFile] = useState({file1: [false, false, ""], file2: [false, false, ""]});
+    const [executedResult, setExecutedResult] = useState({error: [false, false, ""], success: [false, false, ""]});
     const [executedFile, setExecutedFile] = useState({fileName:null, filePath:null, fileSize:null, fileSizeMetric:null});
+    const [tab1, setTab1] = useState(0);
+    const [tab2, setTab2] = useState(0);
+    const [clickedButton, setClickedButton] = useState(0);
+
+    const changeTab1 = (event, newValue) => {
+        console.log("value value: ", tab1);
+        setTab1(newValue);
+    }
+
+    const changeTab2 = (event, newValue) => {
+        console.log("value value: ", tab2);
+        setTab2(newValue);
+    }
+
+    const getFile = (textFieldId) => e  => {
+        let _file_url = document.querySelector("#"+textFieldId).value;
+        console.log("url url: ", _file_url);
+
+    }
 
     /**
      * Function to upload the file and save it as a state
      * @param {*} fileIndex 
      * @returns 
      */
-    const onFileChange = (fileIndex) => e => {
+    const onFileChange = (fileIndex, clickedButton) => e => {
+        setClickedButton(clickedButton);
         const file = e.target.files[0];
         // set the uploaded file to state
         setSelectedFile(prevState => ({
@@ -96,6 +145,9 @@ function FileUpload(props) {
                     console.log("------------error: ", error);
                 });
             }
+        } else if(selectedUrl["file1"] && selectedUrl["file2"]){
+            
+
         } else {
             setExecutedResult({error: [true, "Please Select the files"], success: [false, ""]});
         }
@@ -126,18 +178,30 @@ function FileUpload(props) {
                                 <Typography 
                                     variant="h6" 
                                     align="center"
-                                    >File 1
+                                    >Local Location
                                 </Typography>
                             </Box>
                         </Box>
                         
+                        <Tabs
+                            value={tab1}
+                            onChange={changeTab1}
+                            indicatorColor="primary"
+                            textColor="primary.text"
+                            centered
+                        >
+                            <Tab label="File" />
+                            <Tab label="URL" />
+                        </Tabs>
+            
                         <Box align="center" pt={10}>
+                            {tab1 === 0 &&
                             <Box>
                                 <label htmlFor="upload-file1" >
                                 <input 
                                     id="upload-file1" 
                                     type="file" 
-                                    onChange={onFileChange("file1")} 
+                                    onChange={onFileChange("file1", 0)} 
                                     style={{marginBottom:"20px", display: 'none'}}
                                 />
                                 <Button 
@@ -148,7 +212,21 @@ function FileUpload(props) {
                                 </Button>
                                 </label>
                             </Box>
-                            {selectedFile["file1"] && (
+                            }
+                            {tab1 === 1 &&
+                            <Box>
+                                <form>
+                                    <CustomTextField 
+                                        id="url-file1" 
+                                        label="Enter tar URL to compare" 
+                                        variant="outlined"
+                                        fullWidth
+                                    />
+                                </form>
+                            </Box>
+                            }
+               
+                            {tab1 === clickedButton && selectedFile["file1"] && (
                                 <Box>
                                     <Box pt={1} color="primary.text">
                                         <Typography variant="body1">
@@ -168,7 +246,7 @@ function FileUpload(props) {
                                     </Box>
                                 </Box>
                             )} 
-                            {errorSelectedFile["file1"][0] && (
+                            {tab1 === 0 && errorSelectedFile["file1"][0] && (
                                 <Box align="center" pt={1} color="primary.error">
                                     <Typography 
                                         variant="body2" 
@@ -190,12 +268,24 @@ function FileUpload(props) {
                             <Typography 
                                 variant="h6" 
                                 align="center" 
-                            >File 2
+                            >SW Location
                             </Typography>
                             </Box>
                         </Box>
                         <Divider />
+                        <Tabs
+                            value={tab2}
+                            onChange={changeTab2}
+                            indicatorColor="primary"
+                            textColor="primary.text"
+                            centered
+                        >
+                            <Tab label="File" />
+                            <Tab label="URL" />
+                        </Tabs>
+
                         <Box align="center" pt={10}>
+                            {tab2 === 0 &&
                             <Box>
                                 <label htmlFor="upload-file2" >
                                 <input 
@@ -212,6 +302,19 @@ function FileUpload(props) {
                                 </Button>
                                 </label>
                             </Box>
+                            }
+                            {tab2 === 1 &&
+                                <Box>
+                                <form>
+                                    <CustomTextField 
+                                        id="url-file2" 
+                                        label="Enter tar URL to compare" 
+                                        variant="outlined"
+                                        fullWidth
+                                    />
+                                </form>
+                                </Box>
+                            }
                             {selectedFile["file2"] && (
                                 <Box>
                                     <Box pt={1} color="primary.text">
@@ -247,7 +350,7 @@ function FileUpload(props) {
                 style={{width:150, fontSize:15}}
                 endIcon={<CompareIcon />}
                 onClick={onFileUpload}
-            >Execute
+            >Compare
             </Button>
         </Box>
         

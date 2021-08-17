@@ -11,8 +11,16 @@ export const theme = createTheme({
             success: "#4caf50",
         },
         secondary:{
-            main: '#2e9ad6'
+            main: '#2e9ad6',
+            hint: "#b9bdc1",
         },
+        text: {
+            primary: "#b9bdc1",
+            secondary: "#808080",
+            disabled: "#b9bdc1",
+            hint: "#b9bdc1",
+            
+        }
     }
 })
 
@@ -21,6 +29,7 @@ export const useStyles = makeStyles((theme) => ({
     root: {
         backgroundColor: '#233655',
         minHeight: '100vh',
+        overflow:'hidden'
     },
     fileUpload: {
         backgroundColor: '#0a2042',
