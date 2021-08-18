@@ -1,0 +1,4144 @@
+<files>
+
+<type>
+    <id>
+        HEADER
+    </id>
+    <summary>
+        Header file
+    </summary>
+    <extensions>
+        h, hh, H, hp, hxx, hpp, HPP, h++, tcc
+    </extensions>
+    <weight>
+        100
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SHARED_OBJECT
+    </id>
+    <summary>
+        Shared library
+    </summary>
+    <extensions>
+        so
+    </extensions>
+    <weight>
+        90
+    </weight>
+</type>
+
+<type>
+    <id>
+        KERNEL_MODULE
+    </id>
+    <summary>
+        Kernel module
+    </summary>
+    <extensions>
+        ko
+    </extensions>
+    <weight>
+        85
+    </weight>
+</type>
+
+<type>
+    <id>
+        DEBUG_INFO
+    </id>
+    <summary>
+        Debug info file
+    </summary>
+    <extensions>
+        debug
+    </extensions>
+    <weight>
+        80
+    </weight>
+</type>
+
+<type>
+    <id>
+        DLL
+    </id>
+    <summary>
+        DLL library
+    </summary>
+    <extensions>
+        dll
+    </extensions>
+    <weight>
+        85
+    </weight>
+</type>
+
+<type>
+    <id>
+        SHARED_LIBRARY
+    </id>
+    <summary>
+        Dynamic library
+    </summary>
+    <extensions>
+        dylib
+    </extensions>
+    <weight>
+        85
+    </weight>
+</type>
+
+<type>
+    <id>
+        SPEC
+    </id>
+    <summary>
+        Spec file
+    </summary>
+    <extensions>
+        spec
+    </extensions>
+    <weight>
+        90
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        C_SOURCE
+    </id>
+    <summary>
+        C program
+    </summary>
+    <extensions>
+        c, i
+    </extensions>
+    <weight>
+        90
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PATCH
+    </id>
+    <summary>
+        Patch
+    </summary>
+    <extensions>
+        patch, diff, diffs
+    </extensions>
+    <terms>
+        diff output
+    </terms>
+    <weight>
+        80
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        STATIC_LIBRARY
+    </id>
+    <summary>
+        Static library
+    </summary>
+    <extensions>
+        a
+    </extensions>
+    <weight>
+        80
+    </weight>
+</type>
+
+<type>
+    <id>
+        CPP_SOURCE
+    </id>
+    <summary>
+        C++ program
+    </summary>
+    <extensions>
+        cc, cp, cxx, cpp, CPP, c++, C, ii
+    </extensions>
+    <weight>
+        90
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ADA
+    </id>
+    <summary>
+        Ada program
+    </summary>
+    <extensions>
+        ads, adb
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        FORTRAN
+    </id>
+    <summary>
+        Fortran program
+    </summary>
+    <extensions>
+        f, for, ftn
+        F, FOR, fpp, FPP, FTN
+        f90, f95. f03, f08,
+        F90, F95, F03, F08
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SYMBOL
+    </id>
+    <summary>
+        Symbols file
+    </summary>
+    <extensions>
+        sym, syms, fncs
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LIBTOOL
+    </id>
+    <summary>
+        Libtool file
+    </summary>
+    <extensions>
+        la, lo, plo
+    </extensions>
+    <weight>
+        50
+    </weight>
+</type>
+
+<type>
+    <id>
+        MANPAGE
+    </id>
+    <summary>
+        Man page
+    </summary>
+    <weight>
+        50
+    </weight>
+</type>
+
+<type>
+    <id>
+        DOCBOOK
+    </id>
+    <summary>
+        DocBook document
+    </summary>
+    <extensions>
+        docbook
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        NVDL
+    </id>
+    <summary>
+        NVDL script
+    </summary>
+    <extensions>
+        nvdl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        RSS
+    </id>
+    <summary>
+        RSS file
+    </summary>
+    <extensions>
+        rss
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MMP
+    </id>
+    <summary>
+        Symbian Project file
+    </summary>
+    <extensions>
+        mmp
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        BINARY_TERRAIN
+    </id>
+    <summary>
+        Binary Terrain file
+    </summary>
+    <extensions>
+        bt
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        X3D
+    </id>
+    <summary>
+        X3D Image
+    </summary>
+    <extensions>
+        x3d, x3dv
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        S_EXPRESSION_FILE
+    </id>
+    <summary>
+        S-Expression file
+    </summary>
+    <extensions>
+        sexpr
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LOG_FILE
+    </id>
+    <summary>
+        Log file
+    </summary>
+    <names>
+        xorg.log.1
+    </names>
+    <extensions>
+        log, log.1
+    </extensions>
+    <dirs>
+        logs, log
+    </dirs>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ARGUMENT_FILE
+    </id>
+    <summary>
+        Argument file
+    </summary>
+    <extensions>
+        arg, args, argv
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ML_PROGRAM
+    </id>
+    <summary>
+        ML program
+    </summary>
+    <extensions>
+        ml
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        AUGEAS_FILE
+    </id>
+    <summary>
+        Augeas file
+    </summary>
+    <extensions>
+        aug
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        VMWARE_SCRIPT
+    </id>
+    <summary>
+        VMware Configuration file
+    </summary>
+    <extensions>
+        vmx
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        STAP_SCRIPT
+    </id>
+    <summary>
+        SystemTap script
+    </summary>
+    <extensions>
+        stp
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PPD_FILE
+    </id>
+    <summary>
+        PPD file
+    </summary>
+    <extensions>
+        ppd
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LDAP
+    </id>
+    <summary>
+        LDAP Data file
+    </summary>
+    <extensions>
+        ldif
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ESRI_SHAPEFILE
+    </id>
+    <summary>
+        ESRI Shape file
+    </summary>
+    <extensions>
+        shp, shx
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        DBASE_DATABASE
+    </id>
+    <summary>
+        dBASE Database file
+    </summary>
+    <extensions>
+        dbf
+    </extensions>
+    <terms>
+        DBase 3 data
+    </terms>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        DJVU
+    </id>
+    <summary>
+        DjVu document
+    </summary>
+    <extensions>
+        djvu, djv
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        XPT
+    </id>
+    <summary>
+        XPConnect Typelib file
+    </summary>
+    <extensions>
+        xpt
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        ELF_BINARY
+    </id>
+    <summary>
+        ELF Binary file
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        TDF
+    </id>
+    <summary>
+        TDF file
+    </summary>
+    <extensions>
+        tdf
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MESSAGE_FILE
+    </id>
+    <summary>
+        Message file
+    </summary>
+    <extensions>
+        eml, msg
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XINDY
+    </id>
+    <summary>
+        Xindy file
+    </summary>
+    <extensions>
+        xdy
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GNAT_PROJECT
+    </id>
+    <summary>
+        GNAT Project file
+    </summary>
+    <extensions>
+        gpr
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        BIBTEX
+    </id>
+    <summary>
+        BibTeX document
+    </summary>
+    <extensions>
+        bst, bbl, bib, csf
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        INCLUDE
+    </id>
+    <summary>
+        Include file
+    </summary>
+    <extensions>
+        inc, inl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LANGUAGE_DATA
+    </id>
+    <summary>
+        Language Data file
+    </summary>
+    <extensions>
+        lng
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        XIB
+    </id>
+    <summary>
+        Interface Builder file
+    </summary>
+    <extensions>
+        xib, nib
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MDMP
+    </id>
+    <summary>
+        Memory Dump file
+    </summary>
+    <extensions>
+        dmp, mdmp
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        REGISTRY
+    </id>
+    <summary>
+        Registry file
+    </summary>
+    <extensions>
+        rgs, reg
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        RPC
+    </id>
+    <summary>
+        RPC file
+    </summary>
+    <extensions>
+        srpc, rpc, x
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        BINHEX
+    </id>
+    <summary>
+        BinHex Encoded file
+    </summary>
+    <extensions>
+        hqx
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        PROTOBUF
+    </id>
+    <summary>
+        Protocol Buffer file
+    </summary>
+    <extensions>
+        proto
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        OPTIONS
+    </id>
+    <summary>
+        Options file
+    </summary>
+    <extensions>
+        opt
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SCONS
+    </id>
+    <summary>
+        SCons file
+    </summary>
+    <names>
+        SConstruct, SConscript
+    </names>
+    <extensions>
+        scons
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MD5
+    </id>
+    <summary>
+        MD5 Checksum file
+    </summary>
+    <extensions>
+        md5
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SIGNATURE
+    </id>
+    <summary>
+        Signature file
+    </summary>
+    <extensions>
+        sig
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        OPERA_MAILBOX
+    </id>
+    <summary>
+        Opera Mailbox file
+    </summary>
+    <extensions>
+        mbs
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        OPERA_BOOKMARK
+    </id>
+    <summary>
+        Opera Bookmark file
+    </summary>
+    <extensions>
+        adr
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        QT_UI
+    </id>
+    <summary>
+        Qt UI file
+    </summary>
+    <extensions>
+        ui
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_SS
+    </id>
+    <summary>
+        Qt style sheet
+    </summary>
+    <extensions>
+        qss
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_MESSAGE
+    </id>
+    <summary>
+        Qt Message file
+    </summary>
+    <extensions>
+        qm
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        QT_HELP
+    </id>
+    <summary>
+        Qt Help file
+    </summary>
+    <extensions>
+        qhp, qch, qhc, qhcp
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        OBJECTIVE_C
+    </id>
+    <summary>
+        Objective-C program
+    </summary>
+    <extensions>
+        m, mi
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        OBJECTIVE_CPP
+    </id>
+    <summary>
+        Objective-C++ program
+    </summary>
+    <extensions>
+        mm, mii, M
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SGML
+    </id>
+    <summary>
+        SGML document
+    </summary>
+    <extensions>
+        sgml, sgm
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_PROJECT
+    </id>
+    <summary>
+        Qt Project file
+    </summary>
+    <extensions>
+        pro, pri, prf
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        FSH
+    </id>
+    <summary>
+        OpenGL FSH file
+    </summary>
+    <extensions>
+        fsh
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GLSL
+    </id>
+    <summary>
+        GLSL Shader file
+    </summary>
+    <extensions>
+        glsl, glslf, glslv, vert, frag
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XCODE
+    </id>
+    <summary>
+        Xcode file
+    </summary>
+    <extensions>
+        xcconfig, pbxproj, xcodeproj, nib, pbxbtree, pbxuser
+        xcworkspace, xcsnapshots, xcode
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        PROPERTY_LIST
+    </id>
+    <summary>
+        Property list
+    </summary>
+    <extensions>
+        plist
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        POLICY_FILE
+    </id>
+    <summary>
+        Policy file
+    </summary>
+    <extensions>
+        policy, Policy
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JAVA_ASSEMBLER
+    </id>
+    <summary>
+        Java assembler program
+    </summary>
+    <extensions>
+        jasm, jsasm
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PROPERTY_FILE
+    </id>
+    <summary>
+        Property file
+    </summary>
+    <extensions>
+        prp, pty, props, properties
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SWG_FILE
+    </id>
+    <summary>
+        SWG file
+    </summary>
+    <extensions>
+        swg
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        INITIALIZATION
+    </id>
+    <summary>
+        Initialization file
+    </summary>
+    <extensions>
+        ini
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MANIFEST
+    </id>
+    <summary>
+        Manifest file
+    </summary>
+    <names>
+        manifest, MANIFEST
+    </names>
+    <extensions>
+        manifest, mf, MF, nmf, mn
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        RESOURCE
+    </id>
+    <summary>
+        Resource file
+    </summary>
+    <extensions>
+        res, rc, resource, mc, grd, rsrc, rc2
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XTB
+    </id>
+    <summary>
+        XTB data file
+    </summary>
+    <extensions>
+        xtb
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        MOLECULE_SPEC
+    </id>
+    <summary>
+        Molecule spec file
+    </summary>
+    <extensions>
+        xyz
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_RESOURCE
+    </id>
+    <summary>
+        Qt Resource file
+    </summary>
+    <extensions>
+        qrc
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_DOC
+    </id>
+    <summary>
+        Qt Doc file
+    </summary>
+    <extensions>
+        qdoc, qdocconf, qdocinc
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XBEL
+    </id>
+    <summary>
+        XBEL bookmark
+    </summary>
+    <extensions>
+        xbel
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        IDL
+    </id>
+    <summary>
+        IDL file
+    </summary>
+    <extensions>
+        idl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QML
+    </id>
+    <summary>
+        QML file
+    </summary>
+    <extensions>
+        qml, qs
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XML
+    </id>
+    <summary>
+        XML document
+    </summary>
+    <extensions>
+        xml
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        WML
+    </id>
+    <summary>
+        WML document
+    </summary>
+    <extensions>
+        wml
+    </extensions>
+    <weight>
+        50
+    </weight>
+</type>
+
+<type>
+    <id>
+        MAKEFILE
+    </id>
+    <summary>
+        Makefile
+    </summary>
+    <extensions>
+        mk, make, makefile, Makefile, nmake, kmk, mak
+    </extensions>
+    <names>
+        Makefile, GNUmakefile, Imakefile, Makeconfig, Makerules
+    </names>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JAVA_MAKEFILE
+    </id>
+    <summary>
+        Java Makefile
+    </summary>
+    <extensions>
+        jmk, gmk
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        UCM
+    </id>
+    <summary>
+        UCM file
+    </summary>
+    <description>
+        Unicode Character Mapping
+    </description>
+    <extensions>
+        ucm
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CHARMAP
+    </id>
+    <summary>
+        Charmap file
+    </summary>
+    <extensions>
+        cm
+    </extensions>
+    <dirs>
+        charmaps
+    </dirs>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ABI_LIST
+    </id>
+    <summary>
+        ABI list
+    </summary>
+    <extensions>
+        abilist
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LOCALE_DATA
+    </id>
+    <summary>
+        Localization data
+    </summary>
+    <dirs>
+        iconvdata, localedata, locales
+    </dirs>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        TIMEZONE_DATA
+    </id>
+    <summary>
+        Timezone data
+    </summary>
+    <dirs>
+        timezone
+    </dirs>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CONFIGURE_SCRIPT
+    </id>
+    <summary>
+        Configure script
+    </summary>
+    <names>
+        configure, preconfigure
+    </names>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        VERSIONING
+    </id>
+    <summary>
+        Version file
+    </summary>
+    <names>
+        Version, Versions
+    </names>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GYP
+    </id>
+    <summary>
+        GYP file
+    </summary>
+    <extensions>
+        gyp, gypi
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PKGCONFIG
+    </id>
+    <summary>
+        Pkg-config file
+    </summary>
+    <extensions>
+        pc
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <anchor>
+        PkgConfigFiles
+    </anchor>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        OOO
+    </id>
+    <summary>
+        OpenOffice document
+    </summary>
+    <extensions>
+        sxd, sxi, sxm, smf, sds, odf, odp, otp, odg
+        odb, otg, odt, ott, sda, sdc, ods, ots
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        QT_QPH
+    </id>
+    <summary>
+        Qt Translation file
+    </summary>
+    <extensions>
+        qph
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QT_MS_TS
+    </id>
+    <summary>
+        Qt Translation or MS TypeScript file
+    </summary>
+    <extensions>
+        ts
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DOT
+    </id>
+    <summary>
+        DOT Graph file
+    </summary>
+    <extensions>
+        dot
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DESKTOP
+    </id>
+    <summary>
+        Desktop file
+    </summary>
+    <extensions>
+        desktop
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MS_VISUAL_STUDIO
+    </id>
+    <summary>
+        MS Visual Studio file
+    </summary>
+    <extensions>
+        vcxproj, vcproj, vcprojin, vcxproj.filters, vcxproj.filtersin
+        sln, vc9, resx, vc6, vcwin32, dsw, dsp, csproj, vsprops, xsx
+        cbproj, vbp, vbproj, vcp, vcw, vbg, vbz, vdp, vdproj, vc4, frm
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        WINDOWS
+    </id>
+    <summary>
+        MS Windows file
+    </summary>
+    <extensions>
+        clp, clg, hme, msi, msu, chm, hlp, wmf, emf
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        CSV_FILE
+    </id>
+    <summary>
+        CSV file
+    </summary>
+    <extensions>
+        csv
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        COMMAND
+    </id>
+    <summary>
+        Command file
+    </summary>
+    <extensions>
+        cmd, com, COM
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        WIX
+    </id>
+    <summary>
+        WiX Installer file
+    </summary>
+    <extensions>
+        wxi, wxs
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        STRINGS
+    </id>
+    <summary>
+        Text Strings file
+    </summary>
+    <extensions>
+        strings
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        OVF
+    </id>
+    <summary>
+        OVF file
+    </summary>
+    <extensions>
+        ovf
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        DISK_IMAGE
+    </id>
+    <summary>
+        Disk Image file
+    </summary>
+    <extensions>
+        vdi, vmdk, vhd, iso, vco
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        VIRTUAL_BOX
+    </id>
+    <summary>
+        VirtualBox file
+    </summary>
+    <extensions>
+        vbox
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MMC
+    </id>
+    <summary>
+        Windows MMC file
+    </summary>
+    <extensions>
+        msc
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        VISUAL_BASIC
+    </id>
+    <summary>
+        Visual Basic program
+    </summary>
+    <extensions>
+        vbs, vb, vbx
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LEX
+    </id>
+    <summary>
+        Lex program
+    </summary>
+    <extensions>
+        l
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        YACC
+    </id>
+    <summary>
+        Yacc program
+    </summary>
+    <extensions>
+        y
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LISP
+    </id>
+    <summary>
+        Lisp program
+    </summary>
+    <extensions>
+        lsp, lisp, el
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SEED7_INCLUDE
+    </id>
+    <summary>
+        Seed7 include/library
+    </summary>
+    <extensions>
+        s7i
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SEED7_PROGRAM
+    </id>
+    <summary>
+        Seed7 program
+    </summary>
+    <extensions>
+        sd7
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        HASKELL_SOURCE
+    </id>
+    <summary>
+        Haskell program
+    </summary>
+    <extensions>
+        hs
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        HASKELL_CABAL
+    </id>
+    <summary>
+        Haskell metadata
+    </summary>
+    <extensions>
+        cabal
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        RUST
+    </id>
+    <summary>
+        Rust program
+    </summary>
+    <extensions>
+        rs
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PASCAL
+    </id>
+    <summary>
+        Pascal program
+    </summary>
+    <extensions>
+        pas
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DOS_BATCH
+    </id>
+    <summary>
+        DOS Batch file
+    </summary>
+    <extensions>
+        bat
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        POSTSCRIPT
+    </id>
+    <summary>
+        PostScript file
+    </summary>
+    <extensions>
+        ps, eps, pfa
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        JAVASCRIPT
+    </id>
+    <summary>
+        JavaScript file
+    </summary>
+    <extensions>
+        js, sjs, jsm
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        COFFEESCRIPT
+    </id>
+    <summary>
+        CoffeeScript file
+    </summary>
+    <extensions>
+        coffee
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        NSIS
+    </id>
+    <summary>
+        NSIS script
+    </summary>
+    <extensions>
+        nsi, nsh
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PARAM
+    </id>
+    <summary>
+        Parameter file
+    </summary>
+    <extensions>
+        prm, par, ff
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DOXYGEN
+    </id>
+    <summary>
+        Doxygen file
+    </summary>
+    <extensions>
+        dox, doxy, doxyfile, doxygen
+    </extensions>
+    <names>
+        Doxyfile, Doxyfile.in
+    </names>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        QML_PROJECT
+    </id>
+    <summary>
+        QML Project file
+    </summary>
+    <extensions>
+        qmlproject
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CMAKE
+    </id>
+    <summary>
+        CMake file
+    </summary>
+    <extensions>
+        cmake, cmakein
+    </extensions>
+    <names>
+        CMakeLists.txt
+    </names>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        EXE
+    </id>
+    <summary>
+        Executable file
+    </summary>
+    <weight>
+        50
+    </weight>
+</type>
+
+<type>
+    <id>
+        PE_BINARY
+    </id>
+    <summary>
+        PE Binary file
+    </summary>
+    <weight>
+        45
+    </weight>
+    <terms>
+        PE32, PE64, MS-DOS executable
+    </terms>
+</type>
+
+<type>
+    <id>
+        AUTOMAKE
+    </id>
+    <summary>
+        Automake file
+    </summary>
+    <extensions>
+        am, ac
+    </extensions>
+    <names>
+        Makefile.am, Makefile.ac
+    </names>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        IPDL
+    </id>
+    <summary>
+        IPDL file
+    </summary>
+    <extensions>
+        ipdl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XPI
+    </id>
+    <summary>
+        XPI file
+    </summary>
+    <extensions>
+        xpi
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        CERTIFICATE
+    </id>
+    <summary>
+        Certificate file
+    </summary>
+    <extensions>
+        ca, crt, cert, crl, cer, pem
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        ICC
+    </id>
+    <summary>
+        ICC profile
+    </summary>
+    <extensions>
+        icc, icm, pf
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        CGI
+    </id>
+    <summary>
+        CGI script
+    </summary>
+    <extensions>
+        cgi
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XUL
+    </id>
+    <summary>
+        XML UI file
+    </summary>
+    <extensions>
+        xul
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XBL
+    </id>
+    <summary>
+        XBL file
+    </summary>
+    <extensions>
+        xbl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XSL
+    </id>
+    <summary>
+        XML style sheet
+    </summary>
+    <extensions>
+        xsl
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XSD
+    </id>
+    <summary>
+        XML schema definition
+    </summary>
+    <extensions>
+        xsd
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XSLT
+    </id>
+    <summary>
+        XSL transformation file
+    </summary>
+    <extensions>
+        xslt
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DTD
+    </id>
+    <summary>
+        DTD file
+    </summary>
+    <extensions>
+        dtd
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ENTITY_FILE
+    </id>
+    <summary>
+        Entity file
+    </summary>
+    <extensions>
+        ent
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        XML_RNG
+    </id>
+    <summary>
+        RNG file
+    </summary>
+    <extensions>
+        rng
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        RDF
+    </id>
+    <summary>
+        RDF file
+    </summary>
+    <extensions>
+        rdf
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SQLITE
+    </id>
+    <summary>
+        QSLite database
+    </summary>
+    <extensions>
+        sqlite
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        BERKELEY_DB
+    </id>
+    <summary>
+        Berkeley database
+    </summary>
+    <extensions>
+        db
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        GPERF
+    </id>
+    <summary>
+        GNU Gperf file
+    </summary>
+    <extensions>
+        gperf
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        YAML
+    </id>
+    <summary>
+        YAML file
+    </summary>
+    <extensions>
+        yml, yaml, yml2
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        TCL
+    </id>
+    <summary>
+        Tcl program
+    </summary>
+    <extensions>
+        tcl
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PYTHON
+    </id>
+    <summary>
+        Python program
+    </summary>
+    <extensions>
+        py
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PYTHON_COMPILED
+    </id>
+    <summary>
+        Python compiled program
+    </summary>
+    <bytes>
+        d1f20d0a
+    </bytes>
+    <extensions>
+        pyc, pyo
+    </extensions>
+    <weight>
+        60
+    </weight>
+</type>
+
+<type>
+    <id>
+        SED
+    </id>
+    <summary>
+        Sed program
+    </summary>
+    <extensions>
+        sed
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        FONT
+    </id>
+    <summary>
+        Font file
+    </summary>
+    <extensions>
+        bdf, ttf, TTF, ttc, pfb, qpf, qpf2, otf, eot
+        woff, fnt, bfc, afm, xafm, tfm, vf, ofm, sfd
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        BINARY_DTD
+    </id>
+    <summary>
+        Binary DTD file
+    </summary>
+    <extensions>
+        bdtd
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        ENCODING
+    </id>
+    <summary>
+        Encoding file
+    </summary>
+    <extensions>
+        enc, utf
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        GO
+    </id>
+    <summary>
+        Go program
+    </summary>
+    <extensions>
+        go
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        IBY
+    </id>
+    <summary>
+        ROM Image file
+    </summary>
+    <extensions>
+        iby
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JAVA
+    </id>
+    <summary>
+        Java program
+    </summary>
+    <extensions>
+        java, jsp, jj, sjava, java.template
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CS
+    </id>
+    <summary>
+        C# program
+    </summary>
+    <extensions>
+        cs
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SCALA
+    </id>
+    <summary>
+        Scala program
+    </summary>
+    <extensions>
+        scl
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SHELL
+    </id>
+    <summary>
+        Shell program
+    </summary>
+    <extensions>
+        sh, SH, csh, ksh, bash, tcsh, zsh
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ASSEMBLER
+    </id>
+    <summary>
+        Assembler program
+    </summary>
+    <extensions>
+        asm, s, S, sx, il
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PERL_TEST
+    </id>
+    <summary>
+        Perl test program
+    </summary>
+    <extensions>
+        t
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PERL
+    </id>
+    <summary>
+        Perl program
+    </summary>
+    <extensions>
+        pl, PL, plx, e2x, ph
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LUA
+    </id>
+    <summary>
+        Lua program
+    </summary>
+    <extensions>
+        lua
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        AWK
+    </id>
+    <summary>
+        Awk program
+    </summary>
+    <extensions>
+        awk
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PYTHON_EGG
+    </id>
+    <summary>
+        Python egg
+    </summary>
+    <extensions>
+        egg
+    </extensions>
+    <title>
+        Python Eggs
+    </title>
+    <weight>
+        60
+    </weight>
+</type>
+
+<type>
+    <id>
+        RUBY
+    </id>
+    <summary>
+        Ruby program
+    </summary>
+    <extensions>
+        rb
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PHP
+    </id>
+    <summary>
+        PHP program
+    </summary>
+    <extensions>
+        php, phpt
+    </extensions>
+    <weight>
+        60
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        VIM
+    </id>
+    <summary>
+        Vim Settings file
+    </summary>
+    <extensions>
+        vim
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        SQL
+    </id>
+    <summary>
+        SQL file
+    </summary>
+    <extensions>
+        sql
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SHELL_ARCHIVE
+    </id>
+    <summary>
+        Shell archive
+    </summary>
+    <extensions>
+        shar
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        WEB_SOURCE
+    </id>
+    <summary>
+        WEB Source file
+    </summary>
+    <extensions>
+        web, w
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GETTEXT
+    </id>
+    <summary>
+        Gettext file
+    </summary>
+    <extensions>
+        gmo, po, mo, pot
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        GPG
+    </id>
+    <summary>
+        GNU GPG file
+    </summary>
+    <extensions>
+        gpg
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        RTF
+    </id>
+    <summary>
+        RTF file
+    </summary>
+    <extensions>
+        rtf
+    </extensions>
+    <terms>
+        Rich Text
+    </terms>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        RST
+    </id>
+    <summary>
+        RST file
+    </summary>
+    <extensions>
+        rst
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        VRML
+    </id>
+    <summary>
+        VRML file
+    </summary>
+    <extensions>
+        wrl, vrml
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        IV
+    </id>
+    <summary>
+        Scene graph file
+    </summary>
+    <extensions>
+        iv
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        MATLAB
+    </id>
+    <summary>
+        MATLAB file
+    </summary>
+    <extensions>
+        mat
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        TEX_DOCUMENT
+    </id>
+    <summary>
+        TeX document
+    </summary>
+    <extensions>
+        latex, tex, sty
+    </extensions>
+    <terms>
+        LaTeX
+    </terms>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        DVI
+    </id>
+    <summary>
+        DVI file
+    </summary>
+    <extensions>
+        dvi, xdv
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        XQ
+    </id>
+    <summary>
+        XQuery file
+    </summary>
+    <extensions>
+        xq
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JAVA_CLASS
+    </id>
+    <summary>
+        Java class
+    </summary>
+    <extensions>
+        class
+    </extensions>
+    <weight>
+        60
+    </weight>
+</type>
+
+<type>
+    <id>
+        PERL_MODULE
+    </id>
+    <summary>
+        Perl module
+    </summary>
+    <extensions>
+        pm
+    </extensions>
+    <weight>
+        70
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PERL_XS
+    </id>
+    <summary>
+        Perl XS file
+    </summary>
+    <extensions>
+        xs
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JSON
+    </id>
+    <summary>
+        JSON file
+    </summary>
+    <extensions>
+        json
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        POD
+    </id>
+    <summary>
+        POD document
+    </summary>
+    <extensions>
+        pod
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SKIN
+    </id>
+    <summary>
+        Skin file
+    </summary>
+    <extensions>
+        skin
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        COMPILED_OBJECT
+    </id>
+    <summary>
+        Compiled object
+    </summary>
+    <extensions>
+        o, obj
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        MACRO
+    </id>
+    <summary>
+        Macro file
+    </summary>
+    <extensions>
+        mac
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        INFODOC
+    </id>
+    <summary>
+        Info document
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        GNU_LD_SCRIPT
+    </id>
+    <summary>
+        GNU LD script
+    </summary>
+    <extensions>
+        ld, lds
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DEF
+    </id>
+    <summary>
+        Module-Definition file
+    </summary>
+    <extensions>
+        def
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GIT
+    </id>
+    <summary>
+        Git file
+    </summary>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CVS
+    </id>
+    <summary>
+        CVS file
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        SVN
+    </id>
+    <summary>
+        Subversion file
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        HG
+    </id>
+    <summary>
+        Mercurial file
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        BZR
+    </id>
+    <summary>
+        Bazaar file
+    </summary>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        TEXINFO
+    </id>
+    <summary>
+        Texinfo file
+    </summary>
+    <extensions>
+        texi, texinfo
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        MS_OFFICE
+    </id>
+    <summary>
+        MS office document
+    </summary>
+    <extensions>
+        doc, docx, xl, xls, xlsb, xlsx, tsv, dex
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        CSS
+    </id>
+    <summary>
+        CSS style sheet
+    </summary>
+    <extensions>
+        css
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+    <anchor>
+        CSS
+    </anchor>
+</type>
+
+<type>
+    <id>
+        SCSS
+    </id>
+    <summary>
+        Sass CSS style sheet
+    </summary>
+    <extensions>
+        scss
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        DATA
+    </id>
+    <summary>
+        Data file
+    </summary>
+    <extensions>
+        data, dat, out, stdout, stdin, tbl, input, exp, ex
+    </extensions>
+    <weight>
+        30
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        M4
+    </id>
+    <summary>
+        M4 macro file
+    </summary>
+    <extensions>
+        m4
+    </extensions>
+    <weight>
+        50
+    </weight>
+    <anchor>
+        M4
+    </anchor>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SYMLINK
+    </id>
+    <summary>
+        Symbolic link
+    </summary>
+    <weight>
+        50
+    </weight>
+</type>
+
+<type>
+    <id>
+        HTML
+    </id>
+    <summary>
+        HTML page
+    </summary>
+    <extensions>
+        html, htm, xhtml, dhtml, shtml, shtm
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <anchor>
+        HTML
+    </anchor>
+</type>
+
+<type>
+    <id>
+        PRECOMPILED_HEADER
+    </id>
+    <summary>
+        Precompiled header
+    </summary>
+    <extensions>
+        gch, pch
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        PACKAGE
+    </id>
+    <summary>
+        Package file
+    </summary>
+    <extensions>
+        pkg
+    </extensions>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        PACKAGE_INFO
+    </id>
+    <summary>
+        Package Info file
+    </summary>
+    <names>
+        PkgInfo
+    </names>
+    <extensions>
+        pkginfo
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        JAM_FILE
+    </id>
+    <summary>
+        Jam file
+    </summary>
+    <names>
+        Jamfile, Jamrules
+    </names>
+    <extensions>
+        jam
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        LIST_FILE
+    </id>
+    <summary>
+        Data List
+    </summary>
+    <extensions>
+        list, lst
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        GLADE
+    </id>
+    <summary>
+        Glade interface
+    </summary>
+    <extensions>
+        glade
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        CACHE
+    </id>
+    <summary>
+        Cache file
+    </summary>
+    <extensions>
+        cache
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        HIDDEN
+    </id>
+    <summary>
+        Hidden file
+    </summary>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        BACKUP
+    </id>
+    <summary>
+        Backup file
+    </summary>
+    <extensions>
+        bak
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        SERVICE
+    </id>
+    <summary>
+        Service file
+    </summary>
+    <extensions>
+        service
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        YUM_DB
+    </id>
+    <summary>
+        Yum DB file
+    </summary>
+    <dirs>
+        yumdb
+    </dirs>
+    <weight>
+        40
+    </weight>
+</type>
+
+<type>
+    <id>
+        FIRMWARE
+    </id>
+    <summary>
+        Firmware file
+    </summary>
+    <extensions>
+        fw
+    </extensions>
+    <weight>
+        40
+    </weight>
+    <format>
+        Binary
+    </format>
+</type>
+
+<type>
+    <id>
+        CONFIGURATION
+    </id>
+    <summary>
+        Configuration file
+    </summary>
+    <extensions>
+        conf, config, cfg, cnf, inf, INF, sysconf, sysconfig, rules
+    </extensions>
+    <names>
+        Config, config
+    </names>
+    <weight>
+        50
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        PDF
+    </id>
+    <summary>
+        PDF file
+    </summary>
+    <extensions>
+        pdf
+    </extensions>
+    <weight>
+        30
+    </weight>
+</type>
+
+<type>
+    <id>
+        X_PIXMAP
+    </id>
+    <summary>
+        X Pixmap file
+    </summary>
+    <extensions>
+        xpm, xbm
+    </extensions>
+    <weight>
+        30
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        IMAGE
+    </id>
+    <summary>
+        Image file
+    </summary>
+    <extensions>
+        png, jpg, jpeg, exif, raw, bmp, pbm, webp, spp, tga
+        img, gif, tiff, xcf, cur, svgz, cct, jp2, jpx
+        ppm, tif, yuv, jps, mng, pcx, blend
+    </extensions>
+    <weight>
+        30
+    </weight>
+</type>
+
+<type>
+    <id>
+        VECTOR_IMAGE
+    </id>
+    <summary>
+        Vector Image file
+    </summary>
+    <extensions>
+        svg, emf, dia, asy, fig, cdr, cvx, fxg, hpl, vsd
+    </extensions>
+    <weight>
+        30
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        AUDIO
+    </id>
+    <summary>
+        Audio file
+    </summary>
+    <extensions>
+        wav, aiff, flac, aac, mpc, ogg, wma, sf2, aa, ac3
+        m3u, midi, wave, wax, wow, mp1, mp2, mp3, mpa, mpga
+        mpu, oga, omg, omx, omf, pcast, pls, acm, afc, mid
+        dls, flw, amr
+    </extensions>
+    <weight>
+        30
+    </weight>
+</type>
+
+<type>
+    <id>
+        VIDEO
+    </id>
+    <summary>
+        Video file
+    </summary>
+    <extensions>
+        swf, flv, mng, avi, 3gp, divx, ogv, movie, mov, swf, wmv, xvid
+        mp4, mpeg, mjpeg, mjp, mpeg4, mpg, mpg2, mpv, mpv2, webm
+    </extensions>
+    <weight>
+        30
+    </weight>
+</type>
+
+<type>
+    <id>
+        ICON
+    </id>
+    <summary>
+        Icon
+    </summary>
+    <extensions>
+        ico, icon, ICO, icns
+    </extensions>
+    <weight>
+        30
+    </weight>
+</type>
+
+<type>
+    <id>
+        RPM
+    </id>
+    <summary>
+        RPM package
+    </summary>
+    <extensions>
+        rpm
+    </extensions>
+    <weight>
+        20
+    </weight>
+</type>
+
+<type>
+    <id>
+        SRPM
+    </id>
+    <summary>
+        SRPM package
+    </summary>
+    <extensions>
+        src.rpm, srpm
+    </extensions>
+    <weight>
+        20
+    </weight>
+</type>
+
+<type>
+    <id>
+        DEB
+    </id>
+    <summary>
+        Deb package
+    </summary>
+    <extensions>
+        deb
+    </extensions>
+    <weight>
+        20
+    </weight>
+</type>
+
+<type>
+    <id>
+        DIR
+    </id>
+    <summary>
+        Directory
+    </summary>
+    <weight>
+        20
+    </weight>
+</type>
+
+<type>
+    <id>
+        TEXT
+    </id>
+    <summary>
+        Text file
+    </summary>
+    <extensions>
+        txt, TXT
+    </extensions>
+    <weight>
+        10
+    </weight>
+    <format>
+        Text
+    </format>
+</type>
+
+<type>
+    <id>
+        ARCHIVE
+    </id>
+    <summary>
+        Archive
+    </summary>
+    <extensions>
+        tar.gz, tgz, tar.Z, taz, tar.xz, txz
+        tar.bz2, tbz2, tbz, tb2, tar.lzma, tlzma
+        tar.lz, tlz, zip, zae, tar, lzma, gz
+        jar, war, ear, xz, 7z, rar, sfx, ace
+        bz, bz2, zipx, apk
+    </extensions>
+    <weight>
+        10
+    </weight>
+</type>
+
+<type>
+    <id>
+        INFORM
+    </id>
+    <summary>
+        Information file
+    </summary>
+    <names>
+        PATCHING, ANNOUNCE, FAQ, HACKING, BUGS, CONFORMANCE
+        TRADEMARK, THANKYOU, PACKAGERS, DEBUG, HOWTO, MAINTAINERS
+        TODO, NOTES, AUTHORS, THANKS, IDEAS, HOWTO.DEBUG, DESIGN
+        PKG-INFO, CREDITS, HISTORY, INSTALL, INDEX, RELEASE
+        CONTRIB, NOTE, INSTALLATION, NEW, DEPS, LEGAL.NOTICE
+    </names>
+    <inames>
+        CONTRIBUTORS.txt, BUILDING.txt, Install.txt, BLACKLIST.txt
+        WISHLIST.TXT, HOWTO.txt
+    </inames>
+    <extensions>
+        install, INSTALL
+    </extensions>
+    <weight>
+        10
+    </weight>
+</type>
+
+<type>
+    <id>
+        CHANGELOG
+    </id>
+    <summary>
+        Change log
+    </summary>
+    <names>
+        CHANGES, ChangeLog, NEWS, HISTORY
+    </names>
+    <inames>
+        Release_notes.txt, RELEASE.txt, CHANGES.txt
+    </inames>
+    <weight>
+        10
+    </weight>
+</type>
+
+<type>
+    <id>
+        README
+    </id>
+    <summary>
+        Readme file
+    </summary>
+    <names>
+        README
+    </names>
+    <inames>
+        Readme.txt, README.Debian
+    </inames>
+    <iextensions>
+        readme.txt, README
+    </iextensions>
+    <weight>
+        10
+    </weight>
+</type>
+
+<type>
+    <id>
+        LICENSE
+    </id>
+    <summary>
+        License
+    </summary>
+    <names>
+        LGPL-2, LGPL-3, LICENSE, COPYING, COPYING3
+        COPYING3.LIB, COPYING.LIB, LGPL, COPYING.LESSER
+        LICENSE.LESSER, LICENSE-MPL
+    </names>
+    <inames>
+        LGPL.txt, COPYING.txt, COPYRIGHT, License.txt, COPYING.GPLv2
+        APACHE.license, LGPL.license, COPYING.readme, COPYING.GPLv3
+        COPYING.LGPL, LICENSING.txt, COPYING.LGPLv2.1, GPL.txt
+        GPL-LICENSE.txt, MIT-LICENSE.txt, COPYING.MPL, MPL-1.1.txt
+    </inames>
+    <iextensions>
+        license, licence
+    </iextensions>
+    <weight>
+        10
+    </weight>
+</type>
+
+<type>
+    <id>
+        OTHER
+    </id>
+    <summary>
+        Other
+    </summary>
+    <title>
+        Other Files
+    </title>
+    <weight>
+        0
+    </weight>
+</type>
+
+</files>
