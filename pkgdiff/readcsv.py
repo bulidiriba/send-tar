@@ -6,6 +6,28 @@ cmd_prefix = "/Users/mac/components"
 cwd = os.getcwd()
 
 
+def compare_tar(tar1, tar2):
+  return subprocess.call(["pkgdiff", tar1, tar2])
+
+
+def return_file():
+  file_name = "changes_report.html"
+  file_path = "pkgdiff_reports/"+"tar/"+"1_to_2/"+file_name
+  
+  # get the file size, metric,
+  file_stats = os.stat(file_path)
+  file_size = file_stats.st_size
+  file_size_metric = "html"
+
+  result = {"file_name": file_name,
+            "file_path":file_path,
+            "file_size":file_size,
+            "file_size_metric":file_size_metric
+            }
+              
+  return result
+
+
 def run(cmd):
   print("---------------subrocess cmd-------------")
   print(cmd)
@@ -93,4 +115,5 @@ def execute(file1, file2):
         return result
 
 #result = execute("local_locations.txt", "sw_location.txt")
-#print(result)
+#compare_tar("./files/tar1.tar", "./files/tar2.tar")
+#print(r)

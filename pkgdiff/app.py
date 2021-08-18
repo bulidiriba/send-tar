@@ -12,7 +12,7 @@ UPLOAD_FOLDER = 'uploads'
 if not os.path.exists(UPLOAD_FOLDER):
     os.mkdir(UPLOAD_FOLDER)
 
-ALLOWED_EXTENSIONS = {'txt', 'csv'}
+ALLOWED_EXTENSIONS = {'txt', 'csv', 'tar'}
 
 app = Flask(__name__)
 CORS(app) # enabling CORS
@@ -34,11 +34,14 @@ def upload_files():
             filename2 = secure_filename(file2.filename)
             file1.save(os.path.join(UPLOAD_FOLDER, filename1))
             file2.save(os.path.join(UPLOAD_FOLDER, filename2))
-            result = execute(os.path.join(UPLOAD_FOLDER, filename1), os.path.join(UPLOAD_FOLDER, filename2))
+            #result = execute(os.path.join(UPLOAD_FOLDER, filename1), os.path.join(UPLOAD_FOLDER, filename2))
+            result = compare_tar(os.path.join(UPLOAD_FOLDER, filename1), os.path.join(UPLOAD_FOLDER, filename2))
+            file_result = return_file()
             
-            return jsonify(result)
+            #return  jsonify(result)
+            return jsonify(file_result)
 
-    return
+    #return None
 
 @app.route('/download_file', methods=['GET'])
 def download_file():
