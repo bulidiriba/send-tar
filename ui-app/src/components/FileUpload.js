@@ -196,7 +196,7 @@ function FileUpload(props) {
                                 <Typography 
                                     variant="h6" 
                                     align="center"
-                                    >Local Location
+                                    >Tar A
                                 </Typography>
                             </Box>
                         </Box>
@@ -286,7 +286,7 @@ function FileUpload(props) {
                             <Typography 
                                 variant="h6" 
                                 align="center" 
-                            >SW Location
+                            >Tar B
                             </Typography>
                             </Box>
                         </Box>
