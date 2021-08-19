@@ -6,25 +6,45 @@ cmd_prefix = "/Users/mac/components"
 cwd = os.getcwd()
 
 
-def compare_tar(tar1, tar2):
-  return subprocess.call(["pkgdiff", tar1, tar2])
+def compare_tar(tar1, tar2, device_uuid, timestamp):
+  report_folder = "templates/"+device_uuid+"-"+timestamp
+  report_html = "changes_report.html"
+  report_path = report_folder+"/"+report_html
+  subprocess.call(["rm", "-rf", report_folder])
+  return subprocess.call(["pkgdiff", tar1, tar2, "-report-path", report_path])
 
 
-def return_file():
-  file_name = "changes_report.html"
-  file_path = "pkgdiff_reports/"+"tar/"+"1_to_2/"+file_name
+def zip_folder(name, folder):
+  subprocess.call(["zip", "-r", folder+"/"+name, folder])
+
+def return_file(device_uuid, timestamp):
+  report_html = "changes_report.html"
+  zip_name = "pkgdiff_reports.zip"
   
-  # get the file size, metric,
-  file_stats = os.stat(file_path)
-  file_size = file_stats.st_size
-  file_size_metric = "html"
+  report_folder = "templates/"+device_uuid+"-"+timestamp
+  report_path = report_folder+"/"+report_html
+  zip_path = report_folder+"/"+zip_name
 
-  result = {"file_name": file_name,
-            "file_path":file_path,
+  # call zipping the folder
+  zip_folder(zip_name, report_folder)
+
+  # get the file size, metric,
+  file_stats = os.stat(report_path)
+  file_size = file_stats.st_size
+  size_metric = "bytes"
+
+  zip_stats = os.stat(zip_path)
+  zip_size = zip_stats.st_size
+
+  result = {"file_name":report_html,
+            "file_path":report_path,
             "file_size":file_size,
-            "file_size_metric":file_size_metric
+            "size_metric":size_metric,
+            "zip_name":zip_name,
+            "zip_path":zip_path,
+            "zip_size":zip_size,
             }
-              
+
   return result
 
 

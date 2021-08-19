@@ -14,11 +14,17 @@ import Tab from '@material-ui/core/Tab';
 import { ThemeProvider, createTheme, withStyles } from '@material-ui/core/styles';
 
 import axios from 'axios';
-import fileDownload from 'js-file-download'
+import fileDownload from 'js-file-download';
+
+import {v4 as uuidv4 } from "uuid"; // to generate the uuid for each browser
+import {DeviceUUID} from "device-uuid"; // to generate device(computer) uuid which is independent of browser
 
 // get the endpoint from enviroment
 const apiEndpoint = process.env.REACT_APP_API_ENDPOINT
 console.log("----flask rest api-----", apiEndpoint);
+
+const deviceUUID = new DeviceUUID().get();
+//const browserUUID = uuidv4();
 
 // create the custom Text Field for entering URL 
 const CustomTextField = withStyles({
@@ -47,12 +53,19 @@ function FileUpload(props) {
 
     const [selectedFile, setSelectedFile] = useState({file1:  null, file2: null});
     const [selectedUrl, setSelectedUrl] = useState({file1:  null, file2: null});
-    const [errorSelectedFile, setErrorSelectedFile] = useState({file1: [false, false, ""], file2: [false, false, ""]});
-    const [executedResult, setExecutedResult] = useState({error: [false, false, ""], success: [false, false, ""]});
-    const [executedFile, setExecutedFile] = useState({fileName:null, filePath:null, fileSize:null, fileSizeMetric:null});
+    const [errorSelectedFile, setErrorSelectedFile] = useState({file1: [false, ""], file2: [false, false, ""]});
+    const [executedResult, setExecutedResult] = useState({error: [false, ""], success: [false, false, ""]});
+    const [executedFile, setExecutedFile] = useState({
+            fileName:null, filePath:null, fileSize:null, sizeMetric:null,
+            zipName:null, zipPath:null, zipSize:null
+        });
     const [tab1, setTab1] = useState(0);
     const [tab2, setTab2] = useState(0);
     const [clickedButton, setClickedButton] = useState(0);
+    const [timestamp, setTimestamp] = useState();
+    
+    // define the reports href that will be rendered when the changes_report clicked
+    const reportHref = "http://localhost:5000/"+deviceUUID+"-"+timestamp+"/changes_report.html";
 
     const changeTab1 = (event, newValue) => {
         console.log("value value: ", tab1);
@@ -83,7 +96,7 @@ function FileUpload(props) {
             ...prevState,
             [fileIndex]: file
         }));
-        const allowedFileType = ["txt", "csv"]
+        const allowedFileType = ["txt", "csv", "tar"]
         const fileExtension = file?.name.split(".").pop()
         if (allowedFileType.includes(fileExtension)) {
             setErrorSelectedFile(prevState => ({
@@ -107,6 +120,8 @@ function FileUpload(props) {
      * @returns 
      */
     const onFileUpload = () => {
+        var timestamp2 = new Date().getTime();
+        setTimestamp(timestamp2);
         if(selectedFile["file1"] && selectedFile["file2"]){
             // check if the error occured on the file type or not
             if(errorSelectedFile["file1"][0] || errorSelectedFile["file2"][0]){
@@ -126,7 +141,7 @@ function FileUpload(props) {
                     selectedFile["file2"],
                     selectedFile["file2"].name
                 );
-                let url = apiEndpoint+"/upload_files"
+                let url = apiEndpoint+"/upload_files?device_uuid="+deviceUUID+"&timestamp="+timestamp2;
                 axios.post(url, formData, { 
                 })
                 .then(res => {
@@ -137,7 +152,10 @@ function FileUpload(props) {
                         fileName:result.file_name, 
                         filePath:result.file_path, 
                         fileSize:result.file_size, 
-                        fileSizeMetric:result.file_size_metric
+                        sizeMetric:result.size_metric,
+                        zipName:result.zip_name,
+                        zipPath:result.zip_path,
+                        zipSize:result.zip_size,
                     });
                 })
                 .catch(error => {
@@ -157,12 +175,12 @@ function FileUpload(props) {
      * Function to download the executed file
      */
     const downloadFile = () => {
-        let url = apiEndpoint+"/download_file?file_path="+executedFile["filePath"]
+        let url = apiEndpoint+"/download_file?file_path="+executedFile["zipPath"]
         axios.get(url, {
             responseType: 'blob', // Important
         })
         .then((response) => {
-            fileDownload(response.data, executedFile["fileName"]);
+            fileDownload(response.data, executedFile["zipName"]);
         });
     }
 
@@ -226,7 +244,7 @@ function FileUpload(props) {
                             </Box>
                             }
                
-                            {tab1 === clickedButton && selectedFile["file1"] && (
+                            {selectedFile["file1"] && (
                                 <Box>
                                     <Box pt={1} color="primary.text">
                                         <Typography variant="body1">
@@ -373,10 +391,25 @@ function FileUpload(props) {
                     </Typography>
                 </Box>
 
+
+                <Box color="primary.text">
+                    <Link
+                        variant="body1"
+                        color="secondary"
+                        target="_blank"
+                        href={reportHref}
+                    >
+                    <Typography 
+                        variant="h6"
+                    >{executedFile["fileName"]}
+                    </Typography>
+                    </Link>
+                </Box>
+
                 <Box color="primary.text">
                     <Typography 
                         variant="h6"
-                    >{executedFile["fileName"]}&nbsp;({executedFile["fileSize"]}{executedFile["fileSizeMetric"]})
+                    >{executedFile["zipName"]}&nbsp;({executedFile["zipSize"]}{executedFile["sizeMetric"]})
                     </Typography>
                 </Box>
 
